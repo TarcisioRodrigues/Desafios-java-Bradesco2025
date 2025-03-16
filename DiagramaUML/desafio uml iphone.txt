@@ -1,0 +1,54 @@
+classDiagram
+    class Iphone {
+        +Iphone()
+    }
+
+    %% Interfaces
+    class IReprodutorMusical {
+        interface
+        +tocar()
+        +pausar()
+        +selecionarMusica(musica String)
+    }
+
+    class IAparelhoTelefonico {
+        interface
+        +ligar(numero String)
+        +atender()
+        +iniciarCorreioVoz()
+    }
+
+    class INavegadorInternet {
+        interface
+        +exibirPagina(url String)
+        +adicionarNovaAba()
+        +atualizarPagina()
+    }
+
+    %% Implementações concretas
+    class ReprodutorMusical {
+        +tocar()
+        +pausar()
+        +selecionarMusica(musica String)
+    }
+
+    class AparelhoTelefonico {
+        +ligar(numero String)
+        +atender()
+        +iniciarCorreioVoz()
+    }
+
+    class NavegadorInternet {
+        +exibirPagina(url String)
+        +adicionarNovaAba()
+        +atualizarPagina()
+    }
+
+    %% Relacionamentos
+    Iphone .. IReprodutorMusical
+    Iphone .. IAparelhoTelefonico
+    Iphone .. INavegadorInternet
+
+    ReprodutorMusical .. IReprodutorMusical
+    AparelhoTelefonico .. IAparelhoTelefonico
+    NavegadorInternet .. INavegadorInternet
