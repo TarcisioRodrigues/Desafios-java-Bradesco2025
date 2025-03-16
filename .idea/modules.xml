@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BancoDigitalJava/BancoDigitalJava.iml" filepath="$PROJECT_DIR$/BancoDigitalJava/BancoDigitalJava.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Curso java srpign.iml" filepath="$PROJECT_DIR$/.idea/Curso java srpign.iml" />
       <module fileurl="file://$PROJECT_DIR$/DesafioControleFluxo/DesafioControleFluxo.iml" filepath="$PROJECT_DIR$/DesafioControleFluxo/DesafioControleFluxo.iml" />
     </modules>
